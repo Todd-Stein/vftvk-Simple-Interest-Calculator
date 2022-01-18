@@ -7,34 +7,43 @@
     </head>
     <body>
         <div class="maindiv">
+		 <br></br>
             <h1>Simple Interest Calculator</h1>
+		 <div class="inputs">
+            	Amount <input type="number"  id="principal">
+		 	<br></br>
+            	Rate <input type="range"  id="rate" min="1" max="20" step=".25" value="default_val" onchange="updateRate()">  
+            	<span id="rate_val">
+                	10.25%
+            	</span>
+            	<br></br>
+            	No. of Years 
+            	<select id="years">
+               	 	<option value="1">1</option>
+                		<option value="2">2</option>
+                		<option value="3">3</option>
+                		<option value="4">4</option>
+                		<option value="5">5</option>
+                		<option value="6">6</option>
+                		<option value="7">7</option>
+                		<option value="8">8</option>
+                		<option value="9">9</option>
+                		<option value="10">10</option>
+            	</select>
+            		<br></br>
+            	
 
-            Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range"  id="rate" min="minval" max="maxval" value="default_val">  
-            <span id="rate_val">
-                10.25
-            </span>
-            <br/>
-            No. of Years 
-            <select id="years">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <br/>
-            Interest : <span id="result"></span><br>
-
-            <button onclick="compute()">Compute</button>
-            <span id="result">
+            		<button onclick="compute()">Compute Intrest</button>
+				<br></br>
+            		Intrest: <span id="result">
             
-            </span>
-        </div>
+            		</span>
+		 	</div>
+			<footer>
+				&#169 This Calculator belongs to Todd Stein
+			 </footer>
+       	 </div>
+
     </body>
+
 </html>
